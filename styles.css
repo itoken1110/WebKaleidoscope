@@ -1,6 +1,0 @@
-body,html{margin:0;padding:0;height:100%;}
-#app{display:flex;height:100vh;}
-#controls{width:220px;padding:10px;box-sizing:border-box;background:#f0f0f0;overflow-y:auto;}
-#view{flex:1;display:flex;justify-content:center;align-items:center;}
-#view canvas{width:100%;height:100%;display:block;}
-@media(max-width:600px){#app{flex-direction:column;}#controls{width:100%;}}
