@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Kaleidoscope</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="controls">
+        <h2>Controls</h2>
+        <div>
+          <label for="shape-type">Shape</label>
+          <select id="shape-type">
+            <option value="circle">Circle</option>
+            <option value="triangle">Triangle</option>
+            <option value="square">Square</option>
+            <option value="star">Star</option>
+            <option value="line">Line</option>
+          </select>
+        </div>
+        <div>
+          <label for="shape-color">Color</label>
+          <input id="shape-color" type="color" value="#ff8800" />
+        </div>
+        <button id="add-shape">Add Shape</button>
+        <hr />
+        <div>
+          <label for="rotation">Rotation (rpm)</label>
+          <input id="rotation" type="range" min="-5" max="5" step="0.1" value="1" />
+          <span id="rotation-value">1.0</span>
+        </div>
+        <div>
+          <label for="background">Background</label>
+          <input id="background" type="color" value="#000000" />
+        </div>
+        <button id="reset">Reset</button>
+        <button id="screenshot">Screenshot</button>
+      </div>
+      <div id="view">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
